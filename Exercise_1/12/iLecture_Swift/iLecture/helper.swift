@@ -71,17 +71,17 @@ class schedule{
             }
         }
         
-        var tableform : [[String]]=[];
+        var tableform : [[String]]=[["Title","Professor","Day"]];
         
         for lesson in selectedLessons{
             tableform.append([lesson.title,lesson.prof,lesson.day])
         }
         
-        print(table:tableform,
-              
-              header:["Title", "Professor", "Day"]
-        )
-        
+        if tableform.isEmpty{
+            print("There are no Lectures scheduled for \(day).")
+        } else{
+            print(table:tableform)
+        }
     }
     
     func addLecture(){
@@ -98,5 +98,7 @@ class schedule{
         
         self.lessons.append(newLesson)
     }
+    
+    
     
 }

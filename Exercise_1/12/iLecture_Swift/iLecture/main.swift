@@ -35,5 +35,4 @@ repeat{
     default:
         print("Unexpected Error...");
     }
-    
 }while(!(menuChoice=="exit"))
