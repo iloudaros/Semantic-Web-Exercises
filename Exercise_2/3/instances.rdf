@@ -1,0 +1,593 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:uni="http://www.university.org/">
+
+  <!--****** Departments ******-->
+  <!-- Patra's Departments -->
+  <rdf:Description rdf:about="CEID">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>CEID</uni:dep_name>
+    <uni:dep_city>Patra</uni:dep_city>
+  </rdf:Description>
+  <rdf:Description rdf:about="ECE">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>ECE</uni:dep_name>
+    <uni:dep_city>Patra</uni:dep_city>
+  </rdf:Description>
+  <rdf:Description rdf:about="Philosophy">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>Philosophy</uni:dep_name>
+    <uni:dep_city>Patra</uni:dep_city>
+  </rdf:Description>
+
+  <!-- OtherDepartments -->
+  <rdf:Description rdf:about="To_panepistimio_tis_zois">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>To Panepistimio tis Zois</uni:dep_name>
+    <uni:dep_city>Athens</uni:dep_city>
+  </rdf:Description>
+  <rdf:Description rdf:about="MED">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>MED</uni:dep_name>
+    <uni:dep_city>Thessaloniki</uni:dep_city>
+  </rdf:Description>
+  <rdf:Description rdf:about="Psychology">
+    <rdf:type rdf:resource="#Department"/>
+    <uni:dep_name>Psychology</uni:dep_name>
+    <uni:dep_city>Ioannina</uni:dep_city>
+  </rdf:Description>
+
+  <!--****** Professors *******-->
+  <!-- Professor_1 -->
+  <rdf:Description rdf:about="aandriko">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Andrikopoulos Athanasios</uni:has_name>
+    <uni:has_phone>6998076542</uni:has_phone>
+    <uni:has_age>52</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+    <uni:teaches>
+      <rdf:Bag>
+        <rdf:li rdf:resource="krweb"/>
+        <rdf:li rdf:resource="web"/>
+      </rdf:Bag>
+    </uni:teaches>
+  </rdf:Description>
+
+  <!-- Professor_2 -->
+  <rdf:Description rdf:about="vergos">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Vergos Xaridimos</uni:has_name>
+    <uni:has_phone>691234567</uni:has_phone>
+    <uni:has_age>47</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+    <uni:teaches rdf:resource="ldesign" />
+  </rdf:Description>
+
+  <!-- Professor_3 -->
+  <rdf:Description rdf:about="cveri">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Verikoukis Xristos</uni:has_name>
+    <uni:has_phone>692345678</uni:has_phone>
+    <uni:has_age>40</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+    <uni:teaches rdf:resource="fmathima" />
+  </rdf:Description>
+
+  <!-- Professor_4 -->
+  <rdf:Description rdf:about="kvlachos">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Kiriakos Vlachos</uni:has_name>
+    <uni:has_phone>693456789</uni:has_phone>
+    <uni:has_age>44</uni:has_age>
+    <uni:member_of rdf:resource="Psychology"/>
+    <uni:teaches>
+      <rdf:Bag>
+        <rdf:li rdf:resource="cbt"/>
+        <rdf:li rdf:resource="cbt2"/>
+      </rdf:Bag>
+    </uni:teaches>
+  </rdf:Description>
+
+  <!-- Professor_5 -->
+  <rdf:Description rdf:about="stratis">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Gallopoulos Eustratios</uni:has_name>
+    <uni:has_phone>694567891</uni:has_phone>
+    <uni:has_age>54</uni:has_age>
+    <uni:member_of rdf:resource="To_panepistimio_tis_zois"/>
+    <uni:teaches rdf:resource="penthos1" />
+  </rdf:Description>
+
+  <!-- Professor_6 -->
+  <rdf:Description rdf:about="garofala">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Garofalakis Ioannis</uni:has_name>
+    <uni:has_phone>695678912</uni:has_phone>
+    <uni:has_age>49</uni:has_age>
+    <uni:member_of rdf:resource="ECE"/>
+    <uni:teaches rdf:resource="vidoma1" />
+  </rdf:Description>
+
+  <!-- Professor_7 -->
+  <rdf:Description rdf:about="dermatas">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Dermatas Evaggelos</uni:has_name>
+    <uni:has_phone>696789123</uni:has_phone>
+    <uni:has_age>45</uni:has_age>
+    <uni:member_of rdf:resource="Philosophy"/>
+    <uni:teaches rdf:resource="ithiki1" />
+  </rdf:Description>
+
+  <!-- Professor_8 -->
+  <rdf:Description rdf:about="zaro">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Zaroliagis Xristos</uni:has_name>
+    <uni:has_phone>697891234</uni:has_phone>
+    <uni:has_age>32</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+    <uni:teaches>
+      <rdf:Bag>
+        <rdf:li rdf:resource="algorithms"/>
+        <rdf:li rdf:resource="math"/>
+        <rdf:li rdf:resource="math2"/>
+      </rdf:Bag>
+    </uni:teaches>
+  </rdf:Description>
+
+  <!-- Professor_9 -->
+  <rdf:Description rdf:about="zervakis">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Zervakis Georgios</uni:has_name>
+    <uni:has_phone>698912345</uni:has_phone>
+    <uni:has_age>45</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+    <uni:teaches rdf:resource="rsurgery" />
+  </rdf:Description>
+
+  <!-- Professor_10 -->
+  <rdf:Description rdf:about="thrambo">
+    <rdf:type rdf:resource="#Professor"/>
+    <uni:has_name>Thraboulidis Kleanthis</uni:has_name>
+    <uni:has_phone>699123456</uni:has_phone>
+    <uni:has_age>56</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+    <uni:teaches>
+      <rdf:Bag>
+        <rdf:li rdf:resource="pathologia"/>
+        <rdf:li rdf:resource="pathologia2"/>
+      </rdf:Bag>
+    </uni:teaches>
+  </rdf:Description>
+
+
+  <!--****** Students ******-->
+
+  <!-- Student_1 -->
+  <rdf:Description rdf:about="iloudaros">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Ioannis Loudaros</uni:has_name>
+    <uni:has_phone>6940504030</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_2 -->
+  <rdf:Description rdf:about="kbibiris">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Konstantinos Bibiris</uni:has_name>
+    <uni:has_phone>6900000002</uni:has_phone>
+    <uni:has_age>20</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_3 -->
+  <rdf:Description rdf:about="nini">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Nikos Nikou</uni:has_name>
+    <uni:has_phone>6900000003</uni:has_phone>
+    <uni:has_age>21</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_4 -->
+  <rdf:Description rdf:about="kakatzarou">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Kalikatzaros Kalikatzarou</uni:has_name>
+    <uni:has_phone>6900000004</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_5 -->
+  <rdf:Description rdf:about="ptola">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Parr Ttola</uni:has_name>
+    <uni:has_phone>6900000005</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_6 -->
+  <rdf:Description rdf:about="plee">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Pou Lee</uni:has_name>
+    <uni:has_phone>6900000006</uni:has_phone>
+    <uni:has_age>19</uni:has_age>
+    <uni:member_of rdf:resource="CEID"/>
+  </rdf:Description>
+
+  <!-- Student_7 -->
+  <rdf:Description rdf:about="ereboutsika">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Evanthia Reboutsika</uni:has_name>
+    <uni:has_phone>6900000007</uni:has_phone>
+    <uni:has_age>25</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+  </rdf:Description>
+
+  <!-- Student_8 -->
+  <rdf:Description rdf:about="mkavlova">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Minerva Kavlova</uni:has_name>
+    <uni:has_phone>6900000008</uni:has_phone>
+    <uni:has_age>18</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+  </rdf:Description>
+
+  <!-- Student_9 -->
+  <rdf:Description rdf:about="pepikos">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Petros Pikos</uni:has_name>
+    <uni:has_phone>690000009</uni:has_phone>
+    <uni:has_age>24</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+  </rdf:Description>
+
+  <!-- Student_10 -->
+  <rdf:Description rdf:about="kkokobinos">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Konstantinos Kokobinos</uni:has_name>
+    <uni:has_phone>6900000010</uni:has_phone>
+    <uni:has_age>20</uni:has_age>
+    <uni:member_of rdf:resource="MED"/>
+  </rdf:Description>
+
+  <!-- Student_11 -->
+  <rdf:Description rdf:about="posoakoma">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Paris Osoakoma</uni:has_name>
+    <uni:has_phone>6900000011</uni:has_phone>
+    <uni:has_age>21</uni:has_age>
+    <uni:member_of rdf:resource="To_panepistimio_tis_zois"/>
+  </rdf:Description>
+
+  <!-- Student_12 -->
+  <rdf:Description rdf:about="varethikas">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Vasilis Arethikas</uni:has_name>
+    <uni:has_phone>6900000012</uni:has_phone>
+    <uni:has_age>24</uni:has_age>
+    <uni:member_of rdf:resource="To_panepistimio_tis_zois"/>
+  </rdf:Description>
+
+  <!-- Student_13 -->
+  <rdf:Description rdf:about="athanasia">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Artemis Thanasia</uni:has_name>
+    <uni:has_phone>6900000013</uni:has_phone>
+    <uni:has_age>26</uni:has_age>
+    <uni:member_of rdf:resource="Philosophy"/>
+  </rdf:Description>
+
+  <!-- Student_14 -->
+  <rdf:Description rdf:about="epapa">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Eleni Papa</uni:has_name>
+    <uni:has_phone>6900000014</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="Philosophy"/>
+  </rdf:Description>
+
+  <!-- Student_15 -->
+  <rdf:Description rdf:about="amouzaki">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Athina Mouzaki</uni:has_name>
+    <uni:has_phone>6900000015</uni:has_phone>
+    <uni:has_age>19</uni:has_age>
+    <uni:member_of rdf:resource="Philosophy"/>
+  </rdf:Description>
+
+  <!-- Student_16 -->
+  <rdf:Description rdf:about="teleioni">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Tisis Eleioni</uni:has_name>
+    <uni:has_phone>6900000016</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="Psychology"/>
+  </rdf:Description>
+
+  <!-- Student_17 -->
+  <rdf:Description rdf:about="denbrisko">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Dimitra Enbrisko</uni:has_name>
+    <uni:has_phone>6900000017</uni:has_phone>
+    <uni:has_age>24</uni:has_age>
+    <uni:member_of rdf:resource="Psychology"/>
+  </rdf:Description>
+
+  <!-- Student_18 -->
+  <rdf:Description rdf:about="misotonxeno">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Maria Isotonxeno</uni:has_name>
+    <uni:has_phone>6900000018</uni:has_phone>
+    <uni:has_age>22</uni:has_age>
+    <uni:member_of rdf:resource="Psychology"/>
+  </rdf:Description>
+
+  <!-- Student_19 -->
+  <rdf:Description rdf:about="aschoinas">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Aggelos Schoinas</uni:has_name>
+    <uni:has_phone>6900000019</uni:has_phone>
+    <uni:has_age>25</uni:has_age>
+    <uni:member_of rdf:resource="ECE"/>
+  </rdf:Description>
+
+  <!-- Student_20 -->
+  <rdf:Description rdf:about="lgaga">
+    <rdf:type rdf:resource="#Student"/>
+    <uni:has_name>Lady Gaga</uni:has_name>
+    <uni:has_phone>690004060</uni:has_phone>
+    <uni:has_age>18</uni:has_age>
+    <uni:member_of rdf:resource="ECE"/>
+  </rdf:Description>
+
+
+  <!--****** Lessons ******-->
+  <!--Lesson1-->
+  <Lesson rdf:about="krweb">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Knowledge Representation on the World Wide Web</uni:les_name>
+    <uni:taught_by rdf:resource="aandriko" />
+  </Lesson>
+
+  <!--Lesson2-->
+  <Lesson rdf:about="ldesign">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Data Analysis</uni:les_name>
+    <uni:taught_by rdf:resource="vergos" />
+  </Lesson>
+
+  <!--Lesson3-->
+  <Lesson rdf:about="fmathima">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Agile Development</uni:les_name>
+    <uni:taught_by rdf:resource="cveri" />
+  </Lesson>
+
+  <!--Lesson4-->
+  <Lesson rdf:about="cbt">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Cognitive Behavioral Therapy</uni:les_name>
+    <uni:taught_by rdf:resource="marcelacedzidlo" />
+  </Lesson>
+
+  <!--Lesson5-->
+  <Lesson rdf:about="penthos1">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Penthos 1</uni:les_name>
+    <uni:taught_by rdf:resource="stratis" />
+  </Lesson>
+
+  <!--Lesson6-->
+  <Lesson rdf:about="vidoma1">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Vidoma 1</uni:les_name>
+    <uni:taught_by rdf:resource="garofala" />
+  </Lesson>
+
+  <!--Lesson7-->
+  <Lesson rdf:about="ithiki1">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Ithiki 1</uni:les_name>
+    <uni:taught_by rdf:resource="dermatas" />
+  </Lesson>
+
+  <!--Lesson8-->
+  <Lesson rdf:about="algorithms">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>algorithms</uni:les_name>
+    <uni:taught_by rdf:resource="zaro" />
+  </Lesson>
+
+  <!--Lesson9-->
+  <Lesson rdf:about="rsurgery">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Robotic Surgery</uni:les_name>
+    <uni:taught_by rdf:resource="zervakis" />
+  </Lesson>
+
+  <!--Lesson10-->
+  <Lesson rdf:about="pathologia">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>pathologia</uni:les_name>
+    <uni:taught_by rdf:resource="thrambo" />
+  </Lesson>
+
+  <!--Lesson11-->
+  <Lesson rdf:about="web">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>World Wide Web</uni:les_name>
+    <uni:taught_by rdf:resource="aandriko" />
+  </Lesson>
+
+  <!--Lesson12-->
+  <Lesson rdf:about="pathologia2">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Pathologia 2</uni:les_name>
+    <uni:taught_by rdf:resource="thrambo" />
+  </Lesson>
+
+  <!--Lesson13-->
+  <Lesson rdf:about="math">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Mathimatika</uni:les_name>
+    <uni:taught_by rdf:resource="zaro" />
+  </Lesson>
+
+  <!--Lesson14-->
+  <Lesson rdf:about="math2">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Mathimatika 2</uni:les_name>
+    <uni:taught_by rdf:resource="zaro" />
+  </Lesson>
+
+  <!--Lesson15-->
+  <Lesson rdf:about="cbt2">
+    <rdf:type rdf:resource="#Lesson"/>
+    <uni:les_name>Cognitive Behavioral Therapy 2</uni:les_name>
+    <uni:taught_by rdf:resource="kvlachos" />
+  </Lesson>
+
+
+  <!--****** Classrooms ******-->
+  <!--CEID Classrooms-->
+  <rdf:Description rdf:about="A">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department rdf:resource="CEID" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department rdf:resource="CEID" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C</uni:room_name>
+    <uni:room_capacity>50</uni:room_capacity>
+    <uni:room_department rdf:resource="CEID" />
+  </rdf:Description>
+
+
+  <!--ECE Classrooms-->
+  <rdf:Description rdf:about="A1">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A1</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department rdf:resource="ECE" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B1">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B1</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department rdf:resource="ECE" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C1">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C1</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department rdf:resource="ECE" />
+  </rdf:Description>
+
+
+  <!--Philosophy Classrooms-->
+  <rdf:Description rdf:about="A2">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A2</uni:room_name>
+    <uni:room_capacity>300</uni:room_capacity>
+    <uni:room_department rdf:resource="Philosophy" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B2">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B2</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department rdf:resource="Philosophy" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C2">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C2</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department rdf:resource="Philosophy" />
+  </rdf:Description>
+
+
+  <!--To_panepistimio_tis_zois Classrooms-->
+  <rdf:Description rdf:about="A3">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A3</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department rdf:resource="To_panepistimio_tis_zois" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B3">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B3</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department rdf:resource="To_panepistimio_tis_zois" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C3">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C3</uni:room_name>
+    <uni:room_capacity>100</uni:room_capacity>
+    <uni:room_department rdf:resource="To_panepistimio_tis_zois" />
+  </rdf:Description>
+
+
+  <!--CS Classrooms-->
+  <rdf:Description rdf:about="A4">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A4</uni:room_name>
+    <uni:room_capacity>200</uni:room_capacity>
+    <uni:room_department rdf:resource="MED" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B4">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B4</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department rdf:resource="MED" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C4">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C4</uni:room_name>
+    <uni:room_capacity>150</uni:room_capacity>
+    <uni:room_department rdf:resource="MED" />
+  </rdf:Description>
+
+  <!--Psychology Classrooms-->
+  <rdf:Description rdf:about="A5">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>A5</uni:room_name>
+    <uni:room_capacity>140</uni:room_capacity>
+    <uni:room_department rdf:resource="Psychology" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="B5">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>B5</uni:room_name>
+    <uni:room_capacity>120</uni:room_capacity>
+    <uni:room_department rdf:resource="Psychology" />
+  </rdf:Description>
+
+  <rdf:Description rdf:about="C5">
+    <rdf:type rdf:resource="#Classroom"/>
+    <uni:room_name>C5</uni:room_name>
+    <uni:room_capacity>130</uni:room_capacity>
+    <uni:room_department rdf:resource="Psychology" />
+  </rdf:Description>
+
+</rdf:RDF>
