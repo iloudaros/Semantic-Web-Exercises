@@ -348,109 +348,109 @@
 
   <!--****** Lessons ******-->
   <!--Lesson1-->
-  <Lesson rdf:about="krweb">
+  <rdf:Description rdf:about="krweb">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Knowledge Representation on the World Wide Web</uni:les_name>
     <uni:taught_by rdf:resource="aandriko" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson2-->
-  <Lesson rdf:about="ldesign">
+  <rdf:Description rdf:about="ldesign">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Data Analysis</uni:les_name>
     <uni:taught_by rdf:resource="vergos" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson3-->
-  <Lesson rdf:about="fmathima">
+  <rdf:Description rdf:about="fmathima">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Agile Development</uni:les_name>
     <uni:taught_by rdf:resource="cveri" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson4-->
-  <Lesson rdf:about="cbt">
+  <rdf:Description rdf:about="cbt">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Cognitive Behavioral Therapy</uni:les_name>
     <uni:taught_by rdf:resource="marcelacedzidlo" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson5-->
-  <Lesson rdf:about="penthos1">
+  <rdf:Description rdf:about="penthos1">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Penthos 1</uni:les_name>
     <uni:taught_by rdf:resource="stratis" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson6-->
-  <Lesson rdf:about="vidoma1">
+  <rdf:Description rdf:about="vidoma1">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Vidoma 1</uni:les_name>
     <uni:taught_by rdf:resource="garofala" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson7-->
-  <Lesson rdf:about="ithiki1">
+  <rdf:Description rdf:about="ithiki1">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Ithiki 1</uni:les_name>
     <uni:taught_by rdf:resource="dermatas" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson8-->
-  <Lesson rdf:about="algorithms">
+  <rdf:Description rdf:about="algorithms">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>algorithms</uni:les_name>
     <uni:taught_by rdf:resource="zaro" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson9-->
-  <Lesson rdf:about="rsurgery">
+  <rdf:Description rdf:about="rsurgery">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Robotic Surgery</uni:les_name>
     <uni:taught_by rdf:resource="zervakis" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson10-->
-  <Lesson rdf:about="pathologia">
+  <rdf:Description rdf:about="pathologia">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>pathologia</uni:les_name>
     <uni:taught_by rdf:resource="thrambo" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson11-->
-  <Lesson rdf:about="web">
+  <rdf:Description rdf:about="web">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>World Wide Web</uni:les_name>
     <uni:taught_by rdf:resource="aandriko" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson12-->
-  <Lesson rdf:about="pathologia2">
+  <rdf:Description rdf:about="pathologia2">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Pathologia 2</uni:les_name>
     <uni:taught_by rdf:resource="thrambo" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson13-->
-  <Lesson rdf:about="math">
+  <rdf:Description rdf:about="math">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Mathimatika</uni:les_name>
     <uni:taught_by rdf:resource="zaro" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson14-->
-  <Lesson rdf:about="math2">
+  <rdf:Description rdf:about="math2">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Mathimatika 2</uni:les_name>
     <uni:taught_by rdf:resource="zaro" />
-  </Lesson>
+  </rdf:Description>
 
   <!--Lesson15-->
-  <Lesson rdf:about="cbt2">
+  <rdf:Description rdf:about="cbt2">
     <rdf:type rdf:resource="#Lesson"/>
     <uni:les_name>Cognitive Behavioral Therapy 2</uni:les_name>
     <uni:taught_by rdf:resource="kvlachos" />
-  </Lesson>
+  </rdf:Description>
 
 
   <!--****** Classrooms ******-->
