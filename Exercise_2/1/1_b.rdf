@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:aerga="http://www.archaiaerga.org/">
+
+	<rdf:Description rdf:about="iliada">
+		<aerga:written_by rdf:resource="poiitis"/>
+	</rdf:Description>
+
+  <rdf:Description rdf:about="poiitis">
+    <aerga:century>8th</aerga:century>
+    <aerga:lived_in>Ionia</aerga:lived_in>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="Mikra Asia">
+    <aerga:periexei>
+      <rdf:Bag>
+        <rdf:li>Ionia</rdf:li>
+      </rdf:Bag>
+    </aerga:periexei>
+  </rdf:Description>
+
+</rdf:RDF>
