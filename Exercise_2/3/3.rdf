@@ -3,7 +3,8 @@
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-  xmlns:uni="http://www.university.org/">
+  xmlns:uni="http://www.university.org/"
+  xml:base="http://www.university.org/">
 
   <!-- The Classes -->
   <rdfs:Class rdf:ID="Person"/>

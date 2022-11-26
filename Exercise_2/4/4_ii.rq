@@ -1,0 +1,12 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX uni: <http://www.university.org/>
+SELECT ?name ?phone ?age
+WHERE {
+  ?student rdf:type <http://www.university.org/#Student>;
+        uni:has_phone ?phone;
+        uni:has_name ?name;
+        uni:has_age ?age;
+  FILTER(?age>"23")
+
+}

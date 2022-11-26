@@ -1,0 +1,16 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX uni: <http://www.university.org/>
+SELECT ?room_name ?dep_name ?city
+WHERE {
+  ?class rdf:type <http://www.university.org/#Classroom>;
+        uni:room_department ?dep;
+        uni:room_name ?room_name;
+        uni:room_capacity ?cap.
+
+  ?dep uni:dep_city ?city;
+       uni:dep_name ?dep_name.
+  FILTER(?city="Patra")
+  FILTER(?cap>"150")
+
+}
